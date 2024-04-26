@@ -1,0 +1,881 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 73px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #343434;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar */
+#header nav {
+  background: #fff;
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+}
+
+#header nav li {
+  font-size: 14px;
+  margin-inline: 20px;
+}
+
+#header nav li a {
+  color: #111;
+  width: fit-content;
+  padding: 0 !important;
+}
+
+#header nav li a.nav-link::before {
+  content: " ";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: #222;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+
+#header nav li a.nav-link.active::before {
+  visibility: visible;
+  width: 100%;
+}
+
+
+/* Hero Section */
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.6) 50%), url("../imgs/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h5,
+.about h3,
+.services .services-box h6 {
+  font-weight: 800;
+}
+
+.hero .container h5 {
+  font-size: 50px;
+}
+
+.hero .container h1 .dash::before {
+  content: " ";
+  padding-right: 10px;
+  animation: typing infinite 10s;
+}
+
+.hero .container h1 .dash::after {
+  content: "";
+  position: absolute;
+  margin-left: 10px;
+  top: 10%;
+  right: 0;
+  width: 2px;
+  height: 85%;
+  background-color: #aebcb9;
+}
+
+@keyframes typing {
+  1% {
+    content: "L";
+  }
+
+  2% {
+    content: "La";
+  }
+
+  3% {
+    content: "Lar";
+  }
+
+  4% {
+    content: "Larr";
+  }
+
+  5% {
+    content: "Larry";
+  }
+
+  6% {
+    content: "Larry D";
+  }
+
+  7% {
+    content: "Larry Da";
+  }
+
+  8% {
+    content: "Larry Dan";
+  }
+
+  9% {
+    content: "Larry Dani";
+  }
+
+  10% {
+    content: "Larry Danie";
+  }
+
+  11% {
+    content: "Larry Daniel";
+  }
+
+  12% {
+    content: "Larry Daniels";
+  }
+
+  13% {
+    content: "Larry Daniels";
+  }
+
+  14% {
+    content: "Larry Daniels";
+  }
+
+  15% {
+    content: "Larry Daniels";
+  }
+
+  16% {
+    content: "Larry Daniels";
+  }
+
+  17% {
+    content: "Larry Daniels";
+  }
+
+  18% {
+    content: "Larry Daniels";
+  }
+
+  19% {
+    content: "Larry Daniels";
+  }
+
+  20% {
+    content: "Larry Daniels";
+  }
+
+  21% {
+    content: "Larry Daniels";
+  }
+
+  22% {
+    content: "Larry Daniels";
+  }
+
+  23% {
+    content: "Larry Daniels";
+  }
+
+  24% {
+    content: "Larry Daniels";
+  }
+
+  25% {
+    content: "Larry Daniels";
+  }
+
+  26% {
+    content: "Larry Daniels";
+  }
+
+  27% {
+    content: "Larry Daniel";
+  }
+
+  28% {
+    content: "Larry Danie";
+  }
+
+  29% {
+    content: "Larry Dani";
+  }
+
+  30% {
+    content: "Larry Dan";
+  }
+
+  31% {
+    content: "Larry Da";
+  }
+
+  32% {
+    content: "Larry D";
+  }
+
+  33% {
+    content: "Larry";
+  }
+
+  34% {
+    content: "Larr";
+  }
+
+  35% {
+    content: "Lar";
+  }
+
+  36% {
+    content: "La";
+  }
+
+  37% {
+    content: "L";
+  }
+
+  38% {
+    content: "";
+  }
+
+  39% {
+    content: "D";
+  }
+
+  40% {
+    content: "De";
+  }
+
+  41% {
+    content: "Dev";
+  }
+
+  42% {
+    content: "Deve";
+  }
+
+  43% {
+    content: "Devel";
+  }
+
+  44% {
+    content: "Develo";
+  }
+
+  45% {
+    content: "Develop";
+  }
+
+  46% {
+    content: "Develope";
+  }
+
+  47% {
+    content: "Developer";
+  }
+
+  48% {
+    content: "Developer";
+  }
+
+  49% {
+    content: "Developer";
+  }
+
+  50% {
+    content: "Developer";
+  }
+
+  51% {
+    content: "Developer";
+  }
+
+  52% {
+    content: "Developer";
+  }
+
+  53% {
+    content: "Developer";
+  }
+
+  54% {
+    content: "Developer";
+  }
+
+  55% {
+    content: "Developer";
+  }
+
+  56% {
+    content: "Developer";
+  }
+
+  57% {
+    content: "Developer";
+  }
+
+  58% {
+    content: "Developer";
+  }
+
+  60% {
+    content: "Developer";
+  }
+
+  61% {
+    content: "Developer";
+  }
+
+  62% {
+    content: "Develope";
+  }
+
+  63% {
+    content: "Develop";
+  }
+
+  64% {
+    content: "Develo";
+  }
+
+  65% {
+    content: "Devel";
+  }
+
+  66% {
+    content: "Deve";
+  }
+
+  67% {
+    content: "Dev";
+  }
+
+  68% {
+    content: "De";
+  }
+
+  69% {
+    content: "D";
+  }
+
+  70% {
+    content: "";
+  }
+
+  71% {
+    content: "D";
+  }
+
+  72% {
+    content: "De";
+  }
+
+  73% {
+    content: "Des";
+  }
+
+  74% {
+    content: "Desi";
+  }
+
+  75% {
+    content: "Desig";
+  }
+
+  76% {
+    content: "Design";
+  }
+
+  77% {
+    content: "Designe";
+  }
+
+  78% {
+    content: "Designer";
+  }
+
+  79% {
+    content: "Designer";
+  }
+
+  80% {
+    content: "Designer";
+  }
+
+  81% {
+    content: "Designer";
+  }
+
+  82% {
+    content: "Designer";
+  }
+
+  83% {
+    content: "Designer";
+  }
+
+  84% {
+    content: "Designer";
+  }
+
+  85% {
+    content: "Designer";
+  }
+
+  86% {
+    content: "Designer";
+  }
+
+  87% {
+    content: "Designer";
+  }
+
+  88% {
+    content: "Designer";
+  }
+
+  89% {
+    content: "Designer";
+  }
+
+  90% {
+    content: "Designer";
+  }
+
+  91% {
+    content: "Designer";
+  }
+
+  92% {
+    content: "Designer";
+  }
+
+  93% {
+    content: "Designe";
+  }
+
+  94% {
+    content: "Design";
+  }
+
+  95% {
+    content: "Desig";
+  }
+
+  96% {
+    content: "Desi";
+  }
+
+  97% {
+    content: "Des";
+  }
+
+  99% {
+    content: "De";
+  }
+
+  99.5% {
+    content: "D";
+  }
+
+  100% {
+    content: " ";
+  }
+
+
+}
+
+.hero .social-icon span {
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* End Hero Section */
+
+/* About Section */
+
+.about .about-img::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0px;
+  bottom: -30px;
+  background-image: url(../imgs/dots.png);
+  z-index: -1;
+}
+
+.about .content span.ui-ux,
+.about .content p span {
+  color: #748182;
+}
+
+.about .content span.ui-ux {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.about .content p {
+  color: #999;
+  font-size: 15px;
+}
+
+.about .content .skills .skills-progress {
+  width: 100%;
+  position: relative;
+  padding: 5px 10px;
+  background: #f7f7f7;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.about .content .skills .skills-progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+}
+
+.about .content .skills .skills-progress .anim1 {
+  animation: slide1 2s;
+}
+
+.about .content .skills .skills-progress .anim2 {
+  animation: slide2 2s;
+}
+
+.about .content .skills .skills-progress .anim3 {
+  animation: slide3 2s;
+}
+
+@keyframes slide1 {
+  from {
+    width: 10%;
+  }
+
+  to {
+    width: 95%;
+  }
+}
+
+@keyframes slide2 {
+  from {
+    width: 10%;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes slide3 {
+  from {
+    width: 10%;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+
+.about .content .skills .skills-progress span::after {
+  content: attr(data-value);
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 11px;
+}
+
+.about .content .skills h6 {
+  font-size: 13px;
+}
+
+.about .content .button .buton,
+.contact form .button span {
+  padding: 10px 30px;
+  border-color: #1c1c1c !important;
+  font-size: 13px;
+  transition: all 0.5s;
+}
+
+.about .content .button .downloadCV,
+.about .content .button .contactMe:hover,
+.services .services-box:hover .services-icon,
+.contact .info-box:hover .info-icon,
+.contact form .button span {
+  background: #1c1c1c;
+  color: #eee;
+}
+
+.about .content .button .downloadCV:hover,
+.works .works-box .overlay .overlay-info .icon span:hover,
+.team .team-box .box-img .social-icons li:hover,
+.contact form .button span:hover {
+  background: transparent !important;
+  color: #343434 !important;
+}
+
+/* End About Section */
+
+/* Services Section */
+.services,
+.client,
+.team {
+  background: #f7f7f7;
+}
+
+.services .mytitle h3,
+.works .mytitle h3,
+.client .mytitle h3,
+.team .mytitle h3,
+.contact .mytitle h3 {
+  font-weight: 900;
+  font-size: 40px;
+  width: fit-content;
+}
+
+.services .mytitle h3::after,
+.works .mytitle h3::after,
+.client .mytitle h3::after,
+.team .mytitle h3::after,
+.contact .mytitle h3::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url("../imgs/dots.png");
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+
+.services .services-box {
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+
+.services .services-box .services-icon,
+.contact .info-box .info-icon {
+  background: #f4f4f4;
+  transition: all 0.5s;
+}
+
+.services .services-box .services-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.services .services-box p,
+.client .carousel-item .slider p,
+.amount .amount-box p,
+.contact .info-box p {
+  color: #748182;
+  font-size: 15px;
+}
+
+/* End Services Section */
+
+/* Works Section */
+.works .nav-item button,
+.works .nav-item .active {
+  color: #222;
+  font-weight: 700;
+}
+
+.works .nav-item button::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #111;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.4s;
+  z-index: -1;
+}
+
+.works .nav-item .active::before {
+  width: 95%;
+}
+
+.works .works-box .overlay {
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translateY(10px);
+  inset: 5px;
+}
+
+.works .works-box:hover .overlay,
+.works .works-box:hover .overlay .overlay-info h6 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.works .works-box .overlay .overlay-info h6 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  transform: translateY(-15px);
+  transition: all 0.5s;
+}
+
+.works .works-box .overlay .overlay-info .icon span {
+  width: 30px;
+  height: 30px;
+  background: #111;
+  color: #eee;
+  border: 1px solid #111;
+}
+
+
+/* End Works Section */
+
+/* Client Section */
+.client .slide {
+  max-width: 950px;
+}
+
+.client .carousel-item .slider img {
+  width: 90px;
+  height: 90px;
+}
+
+.client .carousel-item .slider span {
+  font-size: 12px;
+  color: #888;
+}
+
+.client .carousel-indicators button {
+  width: 11px !important;
+  height: 11px !important;
+  background: #d6d6d6;
+  transition: opacity 0.2s ease;
+}
+
+.client .carousel-indicators button.active,
+.client .carousel-indicators button:hover {
+  background: #869791;
+  opacity: 1;
+}
+
+/* End Client Section */
+
+/* Amount Section */
+
+.amount .amount-box h3 {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.amount .amount-box p {
+  color: #748182;
+}
+
+/* End Amount Section */
+
+/* Team Section */
+
+.team .team-box {
+  background-color: rgba(52, 52, 52, .8);
+}
+
+.team .team-box .box-img img {
+  transition: all 0.4s ease;
+}
+
+.team .team-box .box-img:hover img {
+  transform: scale(1.2);
+}
+
+.team .team-box .box-img .social-icons {
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  opacity: 0;
+  inset: 5px;
+  transition: all 0.5s;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+
+.team .team-box:hover .social-icons {
+  opacity: 1;
+  transform: rotateY(0deg) scale(1, 1);
+}
+
+.team .team-box .box-img .social-icons li {
+  display: inline-block;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+}
+
+/* End Team Section  */
+
+/* Contact Section */
+
+.contact .info-box .info-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.contact form input,
+.contact form textarea {
+  background: #f4f4f4;
+  font-size: 14px;
+  padding: 10px;
+  resize: horizontal;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  background: #f4f4f4 !important;
+  border-color: transparent !important;
+  box-shadow: 0 0 0 0 transparent !important;
+}
+
+/* Contact Section */
+
+/* Footer */
+
+footer {
+  background-color: #1c1c1c;
+}
+
+footer p {
+  color: #748182;
+  font-size: 13px;
+  word-spacing: 2px;
+}
+
+/* End Footer */
+
+/* Media Query */
+@media screen and (min-width: 768px) {
+  .hero .container h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1170px;
+  }
+}
